@@ -1,8 +1,8 @@
 import random
 
-print("\033[7m-=\033[m"*40)
-print("----------------------Vamos Jogar Pedra, Papel ou Tesoura!----------------------")
-print("\033[7m-=\033[m"*40)
+print("=="*40)
+print("                      Vamos Jogar Pedra, Papel ou Tesoura!                      ")
+print("=="*40)
 
 print("\n--------------\033[7;40mPor favor escreva a primeira letra sempre maiúscula\033[m---------------")
 
