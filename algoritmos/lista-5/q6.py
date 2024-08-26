@@ -14,3 +14,14 @@ def fib(i):
 
 i = int(input())
 print(fib(i))
+
+#função sincrona
+'''
+def fib(i): 
+  if i == 1 or i == 2:
+    return 1
+  
+  return fib(i-1) + fib(i-2)
+
+i = int(input())
+print(fib(i))'''
