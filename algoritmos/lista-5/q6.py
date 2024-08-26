@@ -13,3 +13,4 @@ def fib(i):
   return corrente 
 
 i = int(input())
+print(fib(i))
