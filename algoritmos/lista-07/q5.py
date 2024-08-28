@@ -6,7 +6,7 @@ def ordem():
 lista = []
 
 def entrada():
-  for i in range(0, 4): 
+  for i in range(0, 10):
     nome = input("Escreva o nome: ")
     lista.append(nome)
   ordem()
