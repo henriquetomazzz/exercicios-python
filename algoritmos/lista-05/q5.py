@@ -1,5 +1,7 @@
+'''A função fatorial  ́e defina da seguinte forma: n! = n x (n - 1)!. Escreva uma função que receba um número 
+inteiro e retorne o seu fatorial. Em seguida escreva um programa que leia um inteiro e, usando a função, 
+calcule e escreva o seu fatorial.'''
 #função não recursiva
-'''
 def fatorial(i):
   if i != 0:
     resultado=1
@@ -12,8 +14,9 @@ def entrada():
   
   fatorial(i)
 
-entrada()'''
+entrada()
 #função recursiva 
+'''
 def fatorial(i): 
   if i == 1: 
     return 1
@@ -21,3 +24,4 @@ def fatorial(i):
 
 i = int(input())
 print(fatorial(i))
+'''

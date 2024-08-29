@@ -1,22 +1,26 @@
-def primo(i): #define função
-  ePrimo = 0 #cria variavel = 0
+'''N ́umero primo  ́e um n ́umero natural que tem apenas dois divisores diferentes, o 1 e ele mesmo. Por definição,
+1 n ̃ao  ́e primo. Crie uma função que indica se um número é primo ou não. Em seguida escreva um programa que 
+leia n ́umeros inteiros e indique se  ́e primo ou não, usando a funçao. O programa deve ser encerrado quando a 
+entrada for -1.'''
+def primo(i):
+  ePrimo = 0
 
-  for j in range(1, i + 1): #esse laço vai de 1 até a variavrl global +1      
-    if i % j == 0: #se i dividido por j tive resto igual a 0 
-      ePrimo += 1 #vai concatenar +1 em  'ePrimo'
+  for j in range(1, i + 1):     
+    if i % j == 0:
+      ePrimo += 1
       
-  if ePrimo  == 2 : # se ePrimo é igual a 2 
-    print('primo') #vai imprimir 'primo'
-  else: #caso contrario
-    print('nao primo') #vai imprimir 'não primo'
+  if ePrimo  == 2 : 
+    print('primo')
+  else:
+    print('nao primo')
         
-def entrada(): #define função 
-  while True: #enquanto for verdadeiro
-    i = int(input()) #vai pedir uma entrada inteira
+def entrada():
+  while True:
+    i = int(input())
 
-    if i == 1:#se a entrada for igual a 1 ele vai parar
+    if i == 1:
       break
-    else: #caso contrário 
-      primo(i)#chama a função com parametro de entrada i
+    else: 
+      primo(i)
 
-entrada()#inicia o programa chamando a função entrada
+entrada()
