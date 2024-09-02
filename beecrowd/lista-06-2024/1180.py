@@ -10,6 +10,20 @@ Saída
 A primeira linha apresenta a mensagem “Menor valor:” seguida de um espaço e do menor valor lido na entrada. 
 A segunda linha apresenta a mensagem “Posicao:” seguido de um espaço e da posição do vetor na qual se encontra
 o menor valor lido, lembrando que o vetor inicia na posição zero.'''
+def menorEpos():
+  N = int(input())
+  valores = list(map(int, input().split()))
 
-entrada = int(input())
+  menor_valor = valores[0]
+  posicao_menor = 0
 
+
+  for i in range(1, N):
+    if valores[i] < menor_valor:
+      menor_valor = valores[i]
+      posicao_menor = i
+
+  print("Menor valor:", menor_valor)
+  print("Posicao:", posicao_menor)
+
+menorEpos()
