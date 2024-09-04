@@ -13,3 +13,24 @@ direita.
 
 Saída
 Imprima o resultado solicitado (a soma ou média), com 1 casa após o ponto decimal.'''
+def matriz():
+  linha = int(input())
+  tipo = str(input())
+  lista = [] 
+
+  if tipo == "S": 
+    for i in range(0,4): 
+      entrada = float(input())
+      lista.append(entrada)
+    soma = sum(lista)
+    print(f"{lista:.1f}")
+
+  elif tipo == "M": 
+    for j in range(0,4):
+      entrada = float(input())
+      lista.append(entrada)
+    soma = sum(lista)
+    media = soma/144
+    print(f"{media:.1f}")
+  
+matriz()
