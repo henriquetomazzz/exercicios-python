@@ -5,7 +5,26 @@ conforme for o caso. A imagem abaixo ilustra o caso da entrada do valor 5 para a
 os elementos que deverão ser considerados na operação.
 
 Entrada
-A primeira linha de entrada contem um número C (0 ≤ C ≤ 11) indicando a coluna que será considerada para operação. A segunda linha de entrada contém um único caractere Maiúsculo T ('S' ou 'M'), indicando a operação (Soma ou Média) que deverá ser realizada com os elementos da matriz. Seguem os 144 valores de ponto flutuante que compõem a matriz.
+A primeira linha de entrada contem um número C (0 ≤ C ≤ 11) indicando a coluna que será considerada para operação. A segunda linha de entrada contém um único caractere Maiúsculo t ('S' ou 'M'), indicando a operação (Soma ou Média) que deverá ser realizada com os elementos da matriz. Seguem os 144 valores de ponto flutuante que compõem a matriz.
 
 Saída
 Imprima o resultado solicitado (a soma ou média), com 1 casa após o ponto decimal.'''
+c = int(input())
+t = input().strip().upper()
+
+matriz = []
+
+for i in range(12):
+    linha = []
+    for j in range(12):
+        linha.append(float(input()))
+    matriz.append(linha)
+
+soma = sum(matriz[i][c] for i in range(12))
+
+if t == 'S':
+    resultado = soma
+elif t == 'M':
+    resultado = soma / 12
+  
+print(f"{resultado:.1f}")
