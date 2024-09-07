@@ -9,3 +9,27 @@ A entrada contém 15 números inteiros.
 
 Saída
 Imprima a saída conforme o exemplo abaixo.'''
+pares = []
+impares = []
+
+for _ in range(15):
+    numero = int(input())
+
+    if numero % 2 == 0:
+        pares.append(numero)
+        if len(pares) == 5:
+            for i in range(5):
+                print(f"par[{i}] = {pares[i]}")
+            pares = [] 
+    else:
+        impares.append(numero)
+        if len(impares) == 5:
+            for i in range(5):
+                print(f"impar[{i}] = {impares[i]}")
+            impares = []
+
+for i in range(len(impares)):
+    print(f"impar[{i}] = {impares[i]}")
+
+for i in range(len(pares)):
+    print(f"par[{i}] = {pares[i]}")
