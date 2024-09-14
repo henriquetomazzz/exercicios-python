@@ -1,8 +1,10 @@
 '''Desenvolva um programa que leia seis números inteiros e mostre a soma apenas daqueles que forem pares. Se o valor
 digitado for impar, desconsidere-o'''
-contador = []
-for c in range(0, 6): 
-  entrada = int(input("Digite um número: "))
-  if entrada%2==0: 
-    contador.append(entrada)
-print(f"A soma de todo os números pares digitador vai ser igual a {sum(contador)}")
+soma = 0
+cont = 0
+for c in range(1, 7): 
+  num = int(input(f"Digite o {c} número: "))
+  if num%2==0: 
+    soma += num
+    cont += 1
+print(f"Você informou {cont} números PARES e a soma foi {soma}.")
