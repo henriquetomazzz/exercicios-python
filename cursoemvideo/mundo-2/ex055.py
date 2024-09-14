@@ -1,8 +1,15 @@
 '''Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos'''
-lista = []
-for c in range(0, 5): 
-  peso = float(input("Digite seu peso: "))
-  lista.append(peso)
-
-print(f"O maior peso apresentado foi de {max(lista)} kg")
-print(f"O menor peso apresentado foi de {min(lista)} kg")
+maior = 0
+menor = 0
+for i in range(1, 6):
+  peso = float(input(f"Peso da {i}ª pessoa: "))
+  if i == 1:
+    maior = peso
+    menor = peso
+  else:
+    if peso > maior:
+      maior = peso
+    if peso < menor:
+      menor = peso
+print(f"O maior peso lido foi de {maior}kg")
+print(f"O menor peso lido foi de {menor}Kg")
