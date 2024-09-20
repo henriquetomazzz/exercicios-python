@@ -14,7 +14,7 @@ A pontuação do time para esta sequência de jogos é 17, Observe que o placar 
 time na primeira posição.'''
 vitoria = empate = 0
 
-for i in range(0, 8):
+for i in range(0, 17):
   x, y = map(int,input().split())
   if x > y: 
     vitoria += 3
