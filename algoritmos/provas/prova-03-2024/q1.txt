@@ -1,0 +1,8 @@
+Considerando a expressão a seguir, qual seria o valor retornado, caso tivéssemos a = 4 b = 3 c = 1 e d = 2? 
+Deixe escrito na prova a resolução completa da expressão
+not(a>=c*d) or b-a < c and b**c+d == a
+
+not(4>=2) or 3-4 < 1 and 3**3 == 4
+4<=2 or -1 < 1 and 9 == 4
+False or True and False
+False 
