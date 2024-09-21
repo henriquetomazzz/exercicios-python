@@ -1,0 +1,2 @@
+Descreva detalhadamente o que seria necessário alterar no código para implementar uma fila de prioridade onde chama
+2 prioritários para 1 regular
