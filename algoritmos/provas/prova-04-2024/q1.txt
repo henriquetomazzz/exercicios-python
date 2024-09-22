@@ -1,5 +1,15 @@
 Para cada um dos códigos escreva a saída que será gerada.
 
 a) 
+As saidas serão: 
+>>3
+>>10
+>>30.0
+>>3
 
-b) 
+b)
+As saidas serão:
+>>27
+>>10
+>>9.0
+>>27
