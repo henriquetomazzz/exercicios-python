@@ -2,7 +2,7 @@
 o menor número, o maior número e o número médio. Do menor número, subtraia o valor médio N vezes, onde N = valor 
 médio. Do maior número, adicione o valor médio N vezes, onde N = valor médio. Exiba todos os números múltiplos de 3 
 entre o menor valor encontrado e o maior valor encontrado, inclusive. Considere que sempre existirá um maior número, um menor número e um número médio, todos diferentes um do
-outro. (3,0)
+outro.
 Ex:
 ENTRADA: 8, 3, 2
 MAIOR NÚMERO: 8 | MENOR NÚMERO: 2 | NÚMERO MÉDIO: 3
