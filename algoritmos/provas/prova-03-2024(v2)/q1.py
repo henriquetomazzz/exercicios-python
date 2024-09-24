@@ -10,3 +10,18 @@ MAIOR NÚMERO: 8 | MENOR NÚMERO: 2 | NÚMERO MÉDIO: 3
 2. SUBTRAI O 3 DO NÚMERO 2 (3 VEZES) → 2 – 3 – 3 – 3 = -7 → NOVO MENOR
 3. INTERVALO [-7, 17]
 4. MÚLTIPLOS DE 3: -6, -3, 0, 3, 6, 9, 12, 15 → SAÍDA (LINHAS DIFERENTES)'''
+x = int(input())
+y = int(input())
+z = int(input())
+
+lista = [x, y, z]
+lista.sort()
+
+novoMaior = (lista[-1]) + (lista[1]**2)
+novoMenor = (lista[0]) - (lista[1]**2)
+
+print(f"Intervalo [{novoMenor}, {novoMaior}]")
+
+for i in range(novoMenor, novoMaior+1):
+  if i%3==0:
+    print(i)
