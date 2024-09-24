@@ -6,3 +6,18 @@ O usuário deverá inserir pelo menos duas notas. Caso contrário, o programa de
 Ex:
 ENTRADA: 8,5; 9,5; 10; 7; 0; -1
 MÉDIA: 9,85 → SAÍDA'''
+lista = [] 
+contador = 0
+while True: 
+  nota = float(input("Insira sua nota: "))
+
+  if nota < 0 or nota > 100: 
+    break
+  lista.append(nota)
+  contador += 1
+  if contador< 2:
+    print("Quantidade de notas insuficientes!")
+    continue
+  
+lista.sort()
+print(f"Média: {(lista[-1]*0.7) + (lista[-2]*0.3):.2f}")
