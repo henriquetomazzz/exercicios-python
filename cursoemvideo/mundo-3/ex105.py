@@ -1,4 +1,4 @@
-'''faça um programa que tenha uma função notas() que pode receber várias notas de alunos e vai retornar um
+'''Faça um programa que tenha uma função notas() que pode receber várias notas de alunos e vai retornar um
 dicionário com as seguintes informações: 
 -quantidade de notas
 -a maior nota 
